@@ -1,4 +1,5 @@
 {
+  "scheme": "chefpartner",
   "expo": {
     "name": "chefpartner-expo",
     "slug": "chefpartner-expo",
@@ -25,6 +26,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }

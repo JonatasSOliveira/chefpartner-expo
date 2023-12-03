@@ -1,6 +1,10 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "target": "ES2021",
+    "removeComments": true,
+    "strictPropertyInitialization": false,
+    "experimentalDecorators": true
   }
 }
