@@ -19,6 +19,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "br.com.jonatasoliveira.chefpartner",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
