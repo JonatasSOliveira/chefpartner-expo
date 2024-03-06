@@ -1,6 +1,10 @@
 {
-  "scheme": "chefpartner",
+  "scheme": "br.com.jonatasoliveira.chefpartner",
   "expo": {
+    "scheme": "br.com.jonatasoliveira.chefpartner",
+    "experiments": {
+      "tsconfigPaths": true
+    },
     "name": "chefpartner-expo",
     "slug": "chefpartner-expo",
     "version": "1.0.0",

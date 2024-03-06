@@ -11,6 +11,11 @@
       "@env/*": ["../env/*"],
       "@libs/*": ["libs/*"],
       "@services/*": ["services/*"],
+      "@exceptions/*": ["exceptions/*"],
+      "@models/*": ["models/*"],
+      "@application/*": ["application/*"],
+      "@domain/*": ["domain/*"],
+      "@infra/*": ["infra/*"],
     }
   }
 }
