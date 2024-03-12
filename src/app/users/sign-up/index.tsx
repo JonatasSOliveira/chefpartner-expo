@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Button, TextInput } from "react-native-paper";
 import { UserSignUpDto } from "@domain/dtos/user-sign-up.dto";
 import { AuthController } from "@application/controllers/auth.controller";
+import { router } from "expo-router";
 
 export default function UserSignUpPage() {
   const authController = new AuthController();
@@ -14,12 +15,9 @@ export default function UserSignUpPage() {
   const signUp = async (): Promise<void> => {
     try {
       await authController.signUp(new UserSignUpDto(email, password, confirmPassword));
+      router.replace('/home');
     } catch (error) {
-      // if (error instanceof ValidationException) {
-      //   alert(error.message);
-      //   return;
-      // }
-
+      alert((error as Error).message);
       throw error;
     }
   }

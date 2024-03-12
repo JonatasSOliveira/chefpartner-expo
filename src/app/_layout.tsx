@@ -1,19 +1,26 @@
 import { Slot } from 'expo-router';
-import { PaperProvider } from 'react-native-paper';
+import { PaperProvider, DefaultTheme } from 'react-native-paper';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styled from 'styled-components/native';
 
 
 const SafeArea = styled(SafeAreaView)`
   flex: 1;
-  background-color: #fff;
-  padding: 12;
+  padding: 12px;
 `;
 
+const theme: typeof DefaultTheme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+  },
+}; 
+
 export default function AppLayout() {
+
   return (
-    <PaperProvider>
-      <SafeArea>
+    <PaperProvider theme={theme}>
+      <SafeArea style={{ backgroundColor: theme.colors.background }}>
         <Slot />
       </SafeArea>
     </PaperProvider>
